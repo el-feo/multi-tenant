@@ -1,0 +1,162 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-rspec_rails
+  - rubocop-capybara
+  - rubocop-factory_bot
+
+AllCops:
+  TargetRubyVersion: 3.4
+  Exclude:
+    - app/frontend/**/*
+    - bin/**/*
+    - coverage/**/*
+    - db/schema.rb
+    - db/migrate/**/*
+    - log/**/*
+    - node_modules/**/*
+    - public/**/*
+    - spec/javascript/**/*
+    - tmp/**/*
+    - vendor/**/*
+  EnabledByDefault: true
+
+### Rails
+
+Rails/FilePath:
+  EnforcedStyle: arguments
+
+Rails/ApplicationController:
+  Enabled: false
+
+Rails/SchemaComment:
+  Enabled: false
+
+Rails/DefaultScope:
+  Enabled: false
+
+Rails/EnvironmentVariableAccess:
+  AllowReads: true
+
+### Bundler
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Bundler/GemVersion:
+  Enabled: false
+
+### Style
+
+Style/BlockComments:
+  Exclude:
+    - 'spec/spec_helper.rb'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: false
+
+Style/MissingElse:
+  Enabled: false
+
+Style/Copyright:
+  Enabled: false
+
+Style/InlineComment:
+  Enabled: false
+
+Style/StringHashKeys:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/IpAddresses:
+  Enabled: false
+
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: single_quotes
+
+Style/QuotedSymbols:
+  EnforcedStyle: single_quotes
+
+Style/RequireOrder:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/Lambda:
+  EnforcedStyle: line_count_dependent
+
+Style/EmptyMethod:
+  Enabled: false
+
+### Layout
+
+Layout:
+  Enabled: false
+
+### Metrics
+
+Metrics/BlockLength:
+  AllowedMethods: ['configure', 'content_security_policy', 'task', 'namespace']
+  Exclude:
+    - 'app/components/**/*'
+    - 'app/views/layouts/**/*'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'app/components/**/*'
+    - 'app/views/layouts/**/*'
+
+Metrics/ClassLength:
+  Exclude:
+    - 'app/components/**/*'
+    - 'app/views/layouts/**/*'
+
+RSpec/ExampleLength:
+  Enabled: false
+
+# Lint
+
+Lint/ConstantResolution:
+  Enabled: false
+
+# RSpec
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/AlignLeftLetBrace:
+  Enabled: false
+
+RSpec/AlignRightLetBrace:
+  Enabled: false
