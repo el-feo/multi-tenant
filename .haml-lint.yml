@@ -1,0 +1,10 @@
+exclude:
+  - 'vendor/**/*'
+
+linters:
+  LineLength:
+    enabled: false
+
+  SpaceInsideHashAttributes:
+    enabled: true
+    style: no_space
