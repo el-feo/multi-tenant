@@ -59,6 +59,8 @@ gem 'rorvswild'
 # Class to build custom data structures, similar to a Hash. (https://github.com/ruby/ostruct)
 gem 'ostruct'
 
+gem 'devise', '~> 4.9', '>= 4.9.4'
+
 group :development, :test do
   # Debugging functionality for Ruby (https://github.com/ruby/debug)
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
