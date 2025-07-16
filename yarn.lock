@@ -1829,9 +1829,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:^14.5.0":
-  version: 14.5.0
-  resolution: "cypress@npm:14.5.0"
+"cypress@npm:^14.5.2":
+  version: 14.5.2
+  resolution: "cypress@npm:14.5.2"
   dependencies:
     "@cypress/request": "npm:^3.0.8"
     "@cypress/xvfb": "npm:^1.2.4"
@@ -1879,7 +1879,7 @@ __metadata:
     yauzl: "npm:^2.10.0"
   bin:
     cypress: bin/cypress
-  checksum: 10c0/b76b05c029625357fbc34f22b632c55f9f981f86c3a568a88ea3d8982b8299e4bd4275e966b2ec767f9a989c6e9059fb03a4a8086048b4e990079b1cab19ba11
+  checksum: 10c0/55d1ba4773dc7d22769e6566bbdd5a78fd16dde4a4806d474de18a2713ed313db3d0734486f774fe11b3078c66d6b03703dfac05c26746ee3d704317734ebc0e
   languageName: node
   linkType: hard
 
@@ -4558,7 +4558,7 @@ __metadata:
     "@tailwindcss/forms": "npm:^0.5.10"
     "@tailwindcss/vite": "npm:^4.1.10"
     "@types/rails__actioncable": "npm:^6.1.11"
-    cypress: "npm:^14.5.0"
+    cypress: "npm:^14.5.2"
     el-transition: "npm:^0.0.7"
     eslint: "npm:^9.29.0"
     eslint-config-prettier: "npm:^10.1.5"
