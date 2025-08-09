@@ -59,6 +59,11 @@ gem 'rorvswild'
 # Class to build custom data structures, similar to a Hash. (https://github.com/ruby/ostruct)
 gem 'ostruct'
 
+# Authentication solution for Rails. (https://github.com/heartcombo/devise)
+gem 'devise', '~> 4.9', '>= 4.9.4'
+# multi-tenant support
+gem 'acts_as_tenant', '~> 1.0.1'
+
 group :development, :test do
   # Debugging functionality for Ruby (https://github.com/ruby/debug)
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'

@@ -9,7 +9,15 @@
     "**/.yarn": true,
     "**/public/vite*": true
   },
-  "files.exclude": {},
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/CVS": true,
+    "**/.ruby-lsp": true
+  },
 
   "search.exclude": {
     "**/tmp": true,
@@ -39,5 +47,19 @@
   },
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
-  }
+  },
+  "hide-files.files": [],
+  "cSpell.words": [
+    "dotenv",
+    "Heroicons",
+    "honeybadger",
+    "interdiscipline",
+    "lograge",
+    "lookbook",
+    "mailgun",
+    "Phlex",
+    "rorvswild",
+    "sendgrid",
+    "vite"
+  ]
 }
